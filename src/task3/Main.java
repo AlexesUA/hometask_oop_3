@@ -13,6 +13,9 @@ public class Main {
         Car tempCar = (Car)vehiclesPark[2];
         tempCar.setClassCar('D');
 
+        //Або можна так
+        //((Car)vehiclesPark[2]).setClassCar('S');
+
         for(int i=0; i<vehiclesPark.length; i++){
             System.out.println((i+1) + " - " + vehiclesPark[i].toString());
         }
