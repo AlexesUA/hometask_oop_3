@@ -3,21 +3,21 @@ package task2;
 public class BadPupil extends Pupil{
     @Override
     public String study() {
-        return "Навчання на дуже низькому рівні.";
+        return "Навчання на дуже низькому рівні";
     }
 
     @Override
     public String read() {
-        return "Читає по слогах.";
+        return "Читає по слогах";
     }
 
     @Override
     public String write() {
-        return "Пише з помилками та помарками.";
+        return "Пише з помилками та помарками";
     }
 
     @Override
     public String relax() {
-        return "Відпочинок перетворює на хаос.";
+        return "Відпочинок перетворює на хаос";
     }
 }

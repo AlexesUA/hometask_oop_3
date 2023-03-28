@@ -9,6 +9,7 @@ public class ClassRoom {
         index = -1;
     }
 
+    public ClassRoom(){}
     public ClassRoom(Pupil pupil1, Pupil pupil2){
         addPupil(pupil1);
         addPupil(pupil2);
@@ -33,7 +34,7 @@ public class ClassRoom {
     public void printClassRom(){
         System.out.println("Учнів в класі " + (index<0?0:index+1));
         for (int i=0; i<index; i++) {
-            System.out.println("Учень %1$s в класі " + (index<0?0:index+1));
+            System.out.println( (i+1) + " " + pupils[i].toString());
 
         }
     }
