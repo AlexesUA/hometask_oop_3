@@ -7,9 +7,9 @@ public class Printer {
         System.out.println(value);
     }
 
-    public void printInColor(String value, Color color) {
-        System.out.print("\033[38;2;" + color.getRed() + ";" + color.getGreen() + ";" + color.getBlue() + "m");
-        System.out.println(value);
-        System.out.print("\033[0m");
-    }
+//    public void printInColor(String value, Color color) {
+//        System.out.print("\033[38;2;" + color.getRed() + ";" + color.getGreen() + ";" + color.getBlue() + "m");
+//        System.out.println(value);
+//        System.out.print("\033[0m");
+//    }
 }
