@@ -8,19 +8,12 @@ public class Main {
         System.out.print("Введіть ліцензійний ключ: ");
         String licenseKey = scInput.next();
 
-        DocumentWorker document;
-
-        switch (licenseKey){
-            case "Pro":
-                document = new ProDocumentWorker();
-                break;
-            case "Expert":
-                document = new ExpertDocumentWorker();
-                break;
-            default:
-                document = new DocumentWorker();
-                break;
-        }
+        // Це я погодився з Idea замінити звичайний switch на розширений. Цікавий метод запису.
+        DocumentWorker document = switch (licenseKey) {
+            case "Pro" -> new ProDocumentWorker();
+            case "Expert" -> new ExpertDocumentWorker();
+            default -> new DocumentWorker();
+        };
 
         document.print();
     }
