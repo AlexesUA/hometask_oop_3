@@ -22,9 +22,8 @@ public class ClassRoom {
 
     public void addPupil(Pupil pupil){
         if (index<4){
-            index++;
             pupils[index] = pupil;
-
+            index++;
         }
         else {
             System.out.println("Клас повний.");
