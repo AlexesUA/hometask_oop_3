@@ -10,4 +10,10 @@ public class DocumentWorker {
     public void saveDocument(){
         System.out.println("Збереження документа доступне у версії Про.");
     }
+
+    public void print(){
+        openDocument();
+        editDocument();
+        saveDocument();
+    }
 }
