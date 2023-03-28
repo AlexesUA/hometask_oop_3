@@ -15,9 +15,7 @@ public class Pupil {
         return "Всі гарно відпочивають";
     }
 
-    public void print(){
-        study();
-        read();
-        write();
+    public String toString(){
+        return String.format("Учень %1$s, %2$s, %3$s, %4$s ", study(), read(), write(), relax());
     }
 }
