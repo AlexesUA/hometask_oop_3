@@ -2,22 +2,22 @@ package task2;
 
 public class ExcelentPupil extends Pupil{
     @Override
-    public void study() {
-        System.out.println("Бездоганно вчиться.");
+    public String study() {
+        return "Бездоганно вчиться.";
     }
 
     @Override
-    public void read() {
-        System.out.println("Читає по \"діагоналі\".");
+    public String read() {
+        return "Читає по \"діагоналі\".";
     }
 
     @Override
-    public void write() {
-        System.out.println("Пише каліграфічним почерком.");
+    public String write() {
+        return "Пише каліграфічним почерком.";
     }
 
     @Override
-    public void relax() {
-        System.out.println("Відпочинок, переважно, перетворює в навчання.");
+    public String relax() {
+        return "Відпочинок, переважно, перетворює в навчання.";
     }
 }

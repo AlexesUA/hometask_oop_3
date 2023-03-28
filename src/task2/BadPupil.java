@@ -2,22 +2,22 @@ package task2;
 
 public class BadPupil extends Pupil{
     @Override
-    public void study() {
-        System.out.println("Навчання на дуже низькому рівні.");
+    public String study() {
+        return "Навчання на дуже низькому рівні.";
     }
 
     @Override
-    public void read() {
-        System.out.println("Читає по слогах.");
+    public String read() {
+        return "Читає по слогах.";
     }
 
     @Override
-    public void write() {
-        System.out.println("Пише з помилками та помарками.");
+    public String write() {
+        return "Пише з помилками та помарками.";
     }
 
     @Override
-    public void relax() {
-        System.out.println("Відпочинок перетворює на хаос.");
+    public String relax() {
+        return "Відпочинок перетворює на хаос.";
     }
 }

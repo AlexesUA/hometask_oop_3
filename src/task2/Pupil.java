@@ -2,16 +2,22 @@ package task2;
 
 public class Pupil {
 
-    public void study(){
-        System.out.println("Всі Добре навчаються");
+    public String study(){
+        return "Всі Добре навчаються";
     }
-    public void read(){
-        System.out.println("Всі гарно читають");
+    public String read(){
+        return "Всі гарно читають";
     }
-    public void write(){
-        System.out.println("Всі гарно пишуть");
+    public String write(){
+        return "Всі гарно пишуть";
     }
-    public void relax(){
-        System.out.println("Всі гарно відпочивають");
+    public String relax(){
+        return "Всі гарно відпочивають";
+    }
+
+    public void print(){
+        study();
+        read();
+        write();
     }
 }
