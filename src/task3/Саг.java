@@ -18,4 +18,9 @@ public class Саг extends Vehicle {
     public void setClassCar(char classCar) {
         this.classCar = classCar;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%1$s, Клас машини: %2$s", super.toString(), classCar);
+    }
 }

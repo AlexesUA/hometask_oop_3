@@ -35,7 +35,8 @@ public class Vehicle {
         this.speed = speed;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return String.format("Ціна: %1$.2f, Рік виробництва: %2$s, Швидкість: %3$.2f", price, yearManufacture, speed);
+    }
 }

@@ -29,4 +29,9 @@ public class Ship extends Vehicle {
     public void setPortRegistration(String portRegistration) {
         this.portRegistration = portRegistration;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%1$s, Кількість пасажирів: %2$s, Порт реєстрації: %3$s", super.toString(), countPassenger, portRegistration);
+    }
 }
