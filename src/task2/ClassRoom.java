@@ -6,7 +6,7 @@ public class ClassRoom {
 
     {
         pupils = new Pupil[4];
-        index = -1;
+        index = 0;
     }
 
     public ClassRoom(){}
@@ -31,7 +31,7 @@ public class ClassRoom {
     }
 
     public void printClassRom(){
-        System.out.println("Учнів в класі " + (index<0?0:index+1));
+        System.out.println("Учнів в класі " + index);//(index<0?0:index+1));
         for (int i=0; i<index; i++) {
             System.out.println( (i+1) + " " + pupils[i].toString());
 
