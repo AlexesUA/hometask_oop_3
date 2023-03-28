@@ -1,12 +1,12 @@
 package task3;
 
-public class Саг extends Vehicle {
+public class Car extends Vehicle {
     private char classCar;
 
-    public Саг(double price, int yearManufacture, double speed) {
+    public Car(double price, int yearManufacture, double speed) {
         super(price, yearManufacture, speed);
     }
-    public Саг(double price, int yearManufacture, double speed, char classCar) {
+    public Car(double price, int yearManufacture, double speed, char classCar) {
         this(price, yearManufacture, speed);
         this.classCar = classCar;
     }
@@ -21,6 +21,10 @@ public class Саг extends Vehicle {
 
     @Override
     public String toString() {
-        return String.format("%1$s, Клас машини: %2$s", super.toString(), classCar);
+        return String.format("Машина; %1$s, Клас машини: %2$s", super.toString(), classCar);
+    }
+
+    public String getVehicle(){
+        return "Машина";
     }
 }

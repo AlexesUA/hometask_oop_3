@@ -32,6 +32,10 @@ public class Plane extends Vehicle {
 
     @Override
     public String toString() {
-        return String.format("%1$s, Висота польоту: %2$s, Кількість пасажирів: %3$s", super.toString(), flyHeight, countPassenger);
+        return String.format("Літак; %1$s, Висота польоту: %2$s, Кількість пасажирів: %3$s", super.toString(), flyHeight, countPassenger);
+    }
+
+    public String getVehicle(){
+        return "Літак";
     }
 }

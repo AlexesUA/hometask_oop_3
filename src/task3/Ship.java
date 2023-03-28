@@ -32,6 +32,11 @@ public class Ship extends Vehicle {
 
     @Override
     public String toString() {
-        return String.format("%1$s, Кількість пасажирів: %2$s, Порт реєстрації: %3$s", super.toString(), countPassenger, portRegistration);
+        return String.format("Корабель; %1$s, Кількість пасажирів: %2$s, Порт реєстрації: %3$s", super.toString(), countPassenger, portRegistration);
     }
+
+    public String getVehicle(){
+        return "Корабель";
+    }
+
 }
