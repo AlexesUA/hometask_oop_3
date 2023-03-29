@@ -3,7 +3,7 @@ package task6;
 import java.awt.Color;
 
 public class Printer {
-    final protected void print(String value) {
+    protected void print(String value) {
         System.out.println(value);
     }
 
